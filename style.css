@@ -157,43 +157,6 @@ h1, h2, h3, h4 {
     transform: translateY(-2px);
 }
 
-/* --- HR PORTAL IN SIDEBAR --- */
-.hr-portal-sidebar {
-    background: linear-gradient(135deg, #0284c7, #0ea5e9);
-    padding: 16px;
-    border-radius: var(--radius);
-    color: white;
-}
-
-.hr-portal-inner h3 {
-    font-size: 14px;
-    margin-bottom: 8px;
-}
-
-.hr-portal-inner p {
-    font-size: 11px;
-    opacity: 0.9;
-    line-height: 1.4;
-    margin-bottom: 12px;
-}
-
-.go-to-hr-btn {
-    width: 100%;
-    padding: 8px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 8px;
-    color: white;
-    font-size: 11px;
-    font-weight: 600;
-    cursor: pointer;
-    backdrop-filter: blur(4px);
-    transition: background 0.2s;
-}
-
-.go-to-hr-btn:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-}
 
 .user-profile {
     display: flex;
@@ -353,7 +316,7 @@ h1, h2, h3, h4 {
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-bottom: 32px;
 }
