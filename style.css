@@ -385,14 +385,7 @@ h1, h2, h3, h4 {
     gap: 8px;
 }
 
-.trend {
-    font-size: 12px;
-    font-weight: 500;
-}
 
-.trend.down {
-    color: var(--danger);
-}
 
 .progress-bar {
     height: 6px;
@@ -737,101 +730,7 @@ h1, h2, h3, h4 {
 .action-priority.high { background-color: #fef2f2; color: #ef4444; }
 .action-priority.legal { background-color: #f1f5f9; color: var(--text-secondary); }
 
-/* --- RECENT ACTIVITY --- */
-.activity-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
-.activity-item {
-    display: flex;
-    gap: 12px;
-    position: relative;
-}
-
-.activity-item:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    left: 4.5px;
-    top: 15px;
-    width: 1px;
-    height: calc(100% + 10px);
-    background-color: var(--border);
-}
-
-.activity-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-top: 4px;
-    z-index: 1;
-}
-
-.activity-dot.blue { background-color: #3b82f6; }
-.activity-dot.purple { background-color: #8b5cf6; }
-
-.activity-info p {
-    font-size: 13px;
-    color: var(--text-primary);
-}
-
-.activity-info span {
-    font-size: 10px;
-    color: var(--text-muted);
-    font-weight: 700;
-}
-
-/* --- CHART --- */
-.chart-container {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
-
-.donut-chart {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: conic-gradient(
-        #3b82f6 0% 60%,
-        #f97316 60% 85%,
-        #8b5cf6 85% 100%
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.donut-inner {
-    width: 60px;
-    height: 60px;
-    background-color: white;
-    border-radius: 50%;
-}
-
-.chart-legend {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.legend-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-}
-
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-}
-
-.dot.blue { background-color: #3b82f6; }
-.dot.orange { background-color: #f97316; }
-.dot.purple { background-color: #8b5cf6; }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
