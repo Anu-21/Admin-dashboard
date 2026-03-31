@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit Admin Dashboard - Executive Overview</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">O</div>
+                    <div class="logo-text">
+                        <h1>Orbit</h1>
+                        <span>REAL-TIME ENTERPRISE PERFORMANCE</span>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i data-lucide="check-square"></i>
+                    <span>Tasks</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i data-lucide="folder"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i data-lucide="users"></i>
+                    <span>Team</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i data-lucide="bar-chart-2"></i>
+                    <span>Reports</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="new-project-btn">
+                    <i data-lucide="plus"></i>
+                    <span>New Project</span>
+                </button>
+
+                <!-- HR Portal Access (Shifted to Sidebar as requested) -->
+                <div class="hr-portal-sidebar">
+                    <div class="hr-portal-inner">
+                        <h3>HR Portal Access</h3>
+                        <p>Manage employees, leaves, payroll and recruitment status.</p>
+                        <button class="go-to-hr-btn">Go to HR Portal</button>
+                    </div>
+                </div>
+
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=Alex+Sterling&background=0284c7&color=fff" alt="Alex Sterling">
+                    <div class="user-info">
+                        <span class="user-name">Alex Sterling</span>
+                        <span class="user-title">CEO & CEO</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="search-bar">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Search enterprise data...">
+                </div>
+                <div class="header-actions">
+                    <button class="ai-insights-btn">
+                        <i data-lucide="zap"></i>
+                        AI Insights
+                    </button>
+                    <button class="icon-btn">
+                        <i data-lucide="bell"></i>
+                        <span class="notification-badge">1</span>
+                    </button>
+                    <div class="header-user">
+                        <img src="https://ui-avatars.com/api/?name=Alex+Sterling" alt="User Avatar">
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-viewport">
+                <section class="overview-section">
+                    <div class="section-header">
+                        <h2>Executive Overview</h2>
+                        <p>Real-time enterprise performance metrics.</p>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-label">TOTAL EMPLOYEES</span>
+                            <div class="stat-value">1,248</div>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">ACTIVE TASKS</span>
+                            <div class="stat-value">432 <span class="trend down">-12%</span></div>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">COMPLETED TASKS</span>
+                            <div class="stat-value">1,890</div>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">ONGOING PROJECTS</span>
+                            <div class="stat-value">24</div>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">COMPLETION RATE</span>
+                            <div class="stat-value">78%</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 78%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="dashboard-grid">
+                    <!-- Left Column -->
+                    <div class="grid-left">
+                        <div class="card department-progress">
+                            <div class="card-header">
+                                <h3>Department Progress</h3>
+                                <a href="#" class="view-all">Full Analytics</a>
+                            </div>
+                            <div class="dept-stats">
+                                <div class="dept-row">
+                                    <div class="dept-label"><span class="badge blue">ENGINEERING</span> 112 tasks active</div>
+                                    <div class="dept-bar-group">
+                                        <div class="dept-bar-container">
+                                            <div class="dept-bar blue" style="width: 85%;"></div>
+                                        </div>
+                                        <span class="dept-value">85%</span>
+                                    </div>
+                                </div>
+                                <div class="dept-row">
+                                    <div class="dept-label"><span class="badge orange">MARKETING</span> 45 tasks active</div>
+                                    <div class="dept-bar-group">
+                                        <div class="dept-bar-container">
+                                            <div class="dept-bar orange" style="width: 62%;"></div>
+                                        </div>
+                                        <span class="dept-value">62%</span>
+                                    </div>
+                                </div>
+                                <div class="dept-row">
+                                    <div class="dept-label"><span class="badge pink">FINANCE</span> 23 tasks active</div>
+                                    <div class="dept-bar-group">
+                                        <div class="dept-bar-container">
+                                            <div class="dept-bar pink" style="width: 93%;"></div>
+                                        </div>
+                                        <span class="dept-value">93%</span>
+                                    </div>
+                                </div>
+                                <div class="dept-row">
+                                    <div class="dept-label"><span class="badge purple">HR</span> 18 tasks active</div>
+                                    <div class="dept-bar-group">
+                                        <div class="dept-bar-container">
+                                            <div class="dept-bar purple" style="width: 55%;"></div>
+                                        </div>
+                                        <span class="dept-value">55%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card deadline-approaching">
+                            <div class="card-header">
+                                <h3>Deadline Approaching</h3>
+                                <a href="#" class="view-all">View All</a>
+                            </div>
+                            <div class="task-list">
+                                <div class="task-item">
+                                    <div class="task-icon">AS</div>
+                                    <div class="task-info">
+                                        <h4>Finalize Q3 Audit</h4>
+                                        <span>Due: Oct 12, 2023</span>
+                                    </div>
+                                    <div class="task-status overdue">OVERDUE <i data-lucide="alert-triangle"></i></div>
+                                </div>
+                                <div class="task-item">
+                                    <div class="task-icon user-avatar"><img src="https://ui-avatars.com/api/?name=MK&background=eee" alt=""></div>
+                                    <div class="task-info">
+                                        <h4>Marketing Budget Review</h4>
+                                        <span>Due: Oct 15, 2023</span>
+                                    </div>
+                                    <div class="task-status due-soon">DUE SOON <i data-lucide="clock"></i></div>
+                                </div>
+                                <div class="task-item">
+                                    <div class="task-icon project-icon">JL</div>
+                                    <div class="task-info">
+                                        <h4>Product Roadmap Sync</h4>
+                                        <span>Oct 20, 2023</span>
+                                    </div>
+                                    <div class="task-status upcoming">UPCOMING <i data-lucide="calendar"></i></div>
+                                </div>
+                                <div class="task-item">
+                                    <div class="task-icon server-icon">SYS</div>
+                                    <div class="task-info">
+                                        <h4>Server Maintenance</h4>
+                                        <span>Due: Oct 10, 2023</span>
+                                    </div>
+                                    <div class="task-status overdue">OVERDUE <i data-lucide="alert-triangle"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ai-business-insights">
+                            <div class="ai-content">
+                                <div class="ai-header">
+                                    <i data-lucide="sparkles"></i>
+                                    <h3>AI Business Insights</h3>
+                                </div>
+                                <ul class="insights-list">
+                                    <li>Productivity increased by 12% this week</li>
+                                    <li>Engineering team has highest workload</li>
+                                    <li>3 tasks are at risk of delay</li>
+                                </ul>
+                                <button class="view-detailed-insights">View Detailed Insights</button>
+                            </div>
+                            <div class="ai-illustration">
+                                <!-- Minimal head outline illustration -->
+                                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M50 20C33.4315 20 20 33.4315 20 50C20 62.5685 27.6569 73.3431 38.5 77.8V90H61.5V77.8C72.3431 73.3431 80 62.5685 80 50C80 33.4315 66.5685 20 50 20Z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="40" cy="45" r="3" fill="currentColor"/>
+                                    <circle cx="60" cy="45" r="3" fill="currentColor"/>
+                                    <path d="M45 60H55" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="grid-right">
+                        <div class="card meetings-overview">
+                            <div class="card-header">
+                                <h3>MEETINGS OVERVIEW</h3>
+                                <i data-lucide="calendar" class="header-icon"></i>
+                            </div>
+                            <div class="meeting-list">
+                                <div class="meeting-item">
+                                    <div class="meeting-time">
+                                        <div class="am-pm">AM</div>
+                                        <div class="hour">9:00</div>
+                                    </div>
+                                    <div class="meeting-info">
+                                        <h4>Board Review</h4>
+                                        <span>Conference Room A</span>
+                                    </div>
+                                </div>
+                                <div class="meeting-item">
+                                    <div class="meeting-time">
+                                        <div class="am-pm">AM</div>
+                                        <div class="hour">11:30</div>
+                                    </div>
+                                    <div class="meeting-info">
+                                        <h4>Marketing Sync</h4>
+                                        <span>Virtual (Zoom)</span>
+                                    </div>
+                                </div>
+                                <div class="meeting-item">
+                                    <div class="meeting-time">
+                                        <div class="am-pm">PM</div>
+                                        <div class="hour">2:00</div>
+                                    </div>
+                                    <div class="meeting-info">
+                                        <h4>Q4 Planning</h4>
+                                        <span>Executive Lounge</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="view-all-meetings-btn">View All Meetings</button>
+                        </div>
+
+                        <!-- Approvals Needed (Renamed from Pending Actions) -->
+                        <div class="card pending-actions">
+                            <div class="card-header">
+                                <h3>APPROVALS NEEDED</h3>
+                                <a href="#" class="view-all">VIEW ALL</a>
+                            </div>
+                            <div class="action-list">
+                                <div class="action-item">
+                                    <div class="action-icon green"><i data-lucide="check"></i></div>
+                                    <div class="action-info">
+                                        <h4>Approve Leave Request</h4>
+                                        <span>John Doe • 2h ago</span>
+                                    </div>
+                                    <div class="action-arrow"><i data-lucide="chevron-right"></i></div>
+                                </div>
+                                <div class="action-item">
+                                    <div class="action-icon orange"><i data-lucide="alert-circle"></i></div>
+                                    <div class="action-info">
+                                        <h4>Task Escalation</h4>
+                                        <span>Marketing Team • 5h ago</span>
+                                    </div>
+                                    <div class="action-priority high">High</div>
+                                </div>
+                                <div class="action-item">
+                                    <div class="action-icon blue"><i data-lucide="file-text"></i></div>
+                                    <div class="action-info">
+                                        <h4>Sign Service Agree...</h4>
+                                        <span>Finance • Yesterday</span>
+                                    </div>
+                                    <div class="action-priority legal">Legal</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card recent-activity">
+                            <div class="card-header">
+                                <h3>RECENT ACTIVITY</h3>
+                            </div>
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <div class="activity-dot blue"></div>
+                                    <div class="activity-info">
+                                        <p><strong>Alex</strong> completed <strong>"API Update"</strong></p>
+                                        <span>10 MIN AGO</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-dot purple"></div>
+                                    <div class="activity-info">
+                                        <p><strong>Sarah</strong> created <strong>"GTM Strategy"</strong></p>
+                                        <span>45 MIN AGO</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card task-distribution">
+                            <div class="card-header">
+                                <h3>TASK DISTRIBUTION</h3>
+                            </div>
+                            <div class="chart-container">
+                                <div class="donut-chart">
+                                    <!-- Donut chart mockup -->
+                                    <div class="donut-inner"></div>
+                                </div>
+                                <div class="chart-legend">
+                                    <div class="legend-item"><span class="dot blue"></span> Product (60%)</div>
+                                    <div class="legend-item"><span class="dot orange"></span> Engineering (25%)</div>
+                                    <div class="legend-item"><span class="dot purple"></span> Marketing (15%)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
